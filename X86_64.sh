@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 修改默认IP
-# sed -i 's/192.168.1.1/192.168.123.100/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_generate
 
 # 更改默认 Shell 为 zsh
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
@@ -121,6 +121,28 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/controller/*.lua
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/model/cbi/v2ray_server/*.lua
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/view/v2ray_server/*.htm
+
+# 修改插件名字
+sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
+# sed -i 's/"网络存储"/"NAS"/g' `egrep "网络存储" -rl ./`
+sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `egrep "Turbo ACC 网络加速" -rl ./`
+sed -i 's/"实时流量监测"/"流量"/g' `egrep "实时流量监测" -rl ./`
+sed -i 's/"KMS 服务器"/"KMS激活"/g' `egrep "KMS 服务器" -rl ./`
+sed -i 's/"TTYD 终端"/"终端"/g' `egrep "TTYD 终端" -rl ./`
+sed -i 's/"USB 打印服务器"/"打印服务"/g' `egrep "USB 打印服务器" -rl ./`
+sed -i 's/"Web 管理"/"Web管理"/g' `egrep "Web 管理" -rl ./`
+sed -i 's/"管理权"/"改密码"/g' `egrep "管理权" -rl ./`
+sed -i 's/"带宽监控"/"监控"/g' `egrep "带宽监控" -rl ./`
+sed -i 's/"设置向导"/"向导"/g' `egrep "设置向导" -rl ./`
+sed -i 's/"USB 打印服务器"/"打印服务"/g' `egrep "USB 打印服务器" -rl ./`
+sed -i 's/"挂载 SMB 网络共享"/"SMB网络共享"/g' `egrep "挂载 SMB 网络共享" -rl ./`
+sed -i 's/"解锁网易云灰色歌曲"/"解锁网易云"/g' `egrep "解锁网易云灰色歌曲" -rl ./`
+sed -i 's/"AirPlay 2 音频接收器"/"音频接收器"/g' `egrep "AirPlay 2 音频接收器" -rl ./`
+sed -i 's/"MWAN3 分流助手"/"分流助手"/g' `egrep "MWAN3 分流助手" -rl ./`
+sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl ./`
+sed -i 's/"ShadowSocksR Plus+ 设置"/"SSR Plus+"/g' `egrep "ShadowSocksR Plus+ 设置" -rl ./`
+sed -i 's/"广告屏蔽大师 Plus+"/"屏广 Plus+"/g' `egrep "广告屏蔽大师 Plus+" -rl ./`
+sed -i 's/"iKoolProxy滤广告"/"过滤广告"/g' `egrep "iKoolProxy滤广告" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
