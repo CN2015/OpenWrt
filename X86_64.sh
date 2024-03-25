@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 修改默认IP
-sed -i 's/192.168.1.1/192.168.132.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.123.2/g' package/base-files/files/bin/config_generate
 
 # 更改默认 Shell 为 zsh
 # sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
@@ -143,7 +143,7 @@ sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl .
 sed -i 's/"ShadowSocksR Plus+"/"SSR Plus+"/g' `egrep "ShadowSocksR Plus+" -rl ./`
 sed -i 's/"广告屏蔽大师 Plus+"/"屏广 Plus+"/g' `egrep "广告屏蔽大师 Plus+" -rl ./`
 sed -i 's/"iKoolProxy 滤广告"/"过滤广告"/g' `egrep "iKoolProxy 滤广告" -rl ./`
-# sed -i 's/"DDNSTO 远程控制"/"远程控制"/g' `egrep "DDNSTO 远程控制" -rl ./`
+sed -i 's/"DDNSTO 远程控制"/"远程控制"/g' `egrep "DDNSTO 远程控制" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
