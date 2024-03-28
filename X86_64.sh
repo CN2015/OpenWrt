@@ -141,9 +141,17 @@ sed -i 's/"AirPlay 2 音频接收器"/"音频接收器"/g' `egrep "AirPlay 2 音
 sed -i 's/"MWAN3 分流助手"/"分流助手"/g' `egrep "MWAN3 分流助手" -rl ./`
 sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl ./`
 sed -i 's/"ShadowSocksR Plus+"/"SSR Plus+"/g' `egrep "ShadowSocksR Plus+" -rl ./`
-sed -i 's/"广告屏蔽大师 Plus+"/"屏广 Plus+"/g' `egrep "广告屏蔽大师 Plus+" -rl ./`
+sed -i 's/"广告屏蔽大师 Plus+"/"屏广大师"/g' `egrep "广告屏蔽大师 Plus+" -rl ./`
 sed -i 's/"iKoolProxy 滤广告"/"过滤广告"/g' `egrep "iKoolProxy 滤广告" -rl ./`
 sed -i 's/"DDNSTO 远程控制"/"远程控制"/g' `egrep "DDNSTO 远程控制" -rl ./`
+sed -i 's/"Argon 主题设置"/"主题设置"/g' `egrep "Argon 主题设置" -rl ./`
+sed -i 's/"AdGuard Home"/"AdGuard"/g' `egrep "AdGuard Home" -rl ./`
+sed -i 's/"Alist 文件列表"/"网盘搜刮"/g' `egrep "Alist 文件列表" -rl ./`
+sed -i 's/"SoftEther VPN 服务器"/"SoftEther"/g' `egrep "SoftEther VPN 服务器" -rl ./`
+sed -i 's/"OpenVPN 服务器"/"OpenVPN"/g' `egrep "OpenVPN 服务器" -rl ./`
+sed -i 's/"IPSec VPN 服务器"/"IPSec VPN"/g' `egrep "IPSec VPN 服务器" -rl ./`
+sed -i 's/"PPTP VPN 服务器"/"PPTP VPN"/g' `egrep "PPTP VPN 服务器" -rl ./`
+sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
