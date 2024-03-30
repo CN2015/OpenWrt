@@ -151,7 +151,7 @@ sed -i 's/"SoftEther VPN 服务器"/"SoftEther"/g' `egrep "SoftEther VPN 服务�
 sed -i 's/"OpenVPN 服务器"/"OpenVPN"/g' `egrep "OpenVPN 服务器" -rl ./`
 sed -i 's/"IPSec VPN 服务器"/"IPSec VPN"/g' `egrep "IPSec VPN 服务器" -rl ./`
 sed -i 's/"PPTP VPN 服务器"/"PPTP VPN"/g' `egrep "PPTP VPN 服务器" -rl ./`
-sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl ./`
+sed -i 's/"V2ray 服务器"/"V2ray"/g' `egrep "V2ray 服务器" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
