@@ -152,6 +152,7 @@ sed -i 's/"OpenVPN 服务器"/"OpenVPN"/g' `egrep "OpenVPN 服务器" -rl ./`
 sed -i 's/"IPSec VPN 服务器"/"IPSec VPN"/g' `egrep "IPSec VPN 服务器" -rl ./`
 sed -i 's/"PPTP VPN 服务器"/"PPTP VPN"/g' `egrep "PPTP VPN 服务器" -rl ./`
 sed -i 's/"V2ray 服务器"/"V2ray"/g' `egrep "V2ray 服务器" -rl ./`
+sed -i 's/"定时重启机器"/"定时重启"/g' `egrep "定时重启机器" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
