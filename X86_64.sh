@@ -156,5 +156,16 @@ sed -i 's/"V2ray 服务器"/"V2ray"/g' `egrep "V2ray 服务器" -rl ./`
 sed -i 's/"Frps"/"Frp服务端"/g' `egrep "Frps" -rl ./`
 sed -i 's/"Frp 内网穿透"/"Frp客户端"/g' `egrep "Frp 内网穿透" -rl ./`
 
+cat > package/base-files/files/etc/banner << EOF
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ %D %V, %C
+ -----------------------------------------------------
+EOF
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
