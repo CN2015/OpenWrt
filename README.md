@@ -52,7 +52,7 @@
 </details>
 
 <details>
-<summary><b>&nbsp;X86、R2S、R4S 等软路由插件预览</b></summary>
+<summary><b>&nbsp;插件预览</b></summary>
 <br/>
 <details>
 <summary><b>├── 状态</b></summary>
