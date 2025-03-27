@@ -1,4 +1,4 @@
-name: X86_MINI OpenWrt
+name: X86_64_MINI OpenWrt
 
 on:
   workflow_dispatch:
@@ -8,8 +8,8 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: configs/X86-MINI.config
-  DIY_SCRIPT: X86-MINI.sh
+  CONFIG_FILE: configs/X86_64_MINI.config
+  DIY_SCRIPT: X86_64_MINI.sh
   CLASH_KERNEL: amd64
   CACHE_TOOLCHAIN: true
   UPLOAD_BIN_DIR: false
