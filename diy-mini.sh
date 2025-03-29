@@ -161,6 +161,7 @@ sed -i 's/"Online User"/"在线用户"/g' `egrep "Online User" -rl ./`
 sed -i 's/"备份与升级"/"备份/升级"/g' `egrep "备份与升级" -rl ./`
 sed -i 's/"UPnP"/"即插即用"/g' `egrep "UPnP" -rl ./`
 sed -i 's/"监控"/"带宽监视"/g' `egrep "监控" -rl ./`
+sed -i 's/"Lucky大吉"/"全能工具"/g' `egrep "Lucky大吉" -rl ./`
 
 cat > package/base-files/files/etc/banner << EOF
   _______                     ________        __
