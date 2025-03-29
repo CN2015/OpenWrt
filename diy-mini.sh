@@ -151,6 +151,10 @@ sed -i 's/"OpenVPN 服务器"/"OpenVPN"/g' `egrep "OpenVPN 服务器" -rl ./`
 sed -i 's/"IPSec VPN 服务器"/"IPSec VPN"/g' `egrep "IPSec VPN 服务器" -rl ./`
 sed -i 's/"PPTP VPN 服务器"/"PPTP VPN"/g' `egrep "PPTP VPN 服务器" -rl ./`
 sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl ./`
+sed -i 's/"Online User"/"在线用户"/g' `egrep "Online User" -rl ./`
+sed -i 's/"备份与升级"/"备份/升级"/g' `egrep "备份与升级" -rl ./`
+sed -i 's/"UPnP"/"即插即用"/g' `egrep "UPnP" -rl ./`
+
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
