@@ -147,6 +147,7 @@ sed -i 's/"DDNSTO 远程控制"/"远程控制"/g' `egrep "DDNSTO 远程控制" -
 sed -i 's/"Argon 主题设置"/"主题设置"/g' `egrep "Argon 主题设置" -rl ./`
 sed -i 's/"AdGuard Home"/"AdGuard"/g' `egrep "AdGuard Home" -rl ./`
 sed -i 's/"Alist 文件列表"/"网盘搜刮"/g' `egrep "Alist 文件列表" -rl ./`
+sed -i 's/"Alist"/"网盘搜刮"/g' `egrep "Alist" -rl ./`
 sed -i 's/"SoftEther VPN 服务器"/"SoftEther"/g' `egrep "SoftEther VPN 服务器" -rl ./`
 sed -i 's/"OpenVPN 服务器"/"OpenVPN"/g' `egrep "OpenVPN 服务器" -rl ./`
 sed -i 's/"IPSec VPN 服务器"/"IPSec VPN"/g' `egrep "IPSec VPN 服务器" -rl ./`
@@ -155,7 +156,7 @@ sed -i 's/"UU游戏加速器"/"游戏加速"/g' `egrep "UU游戏加速器" -rl .
 sed -i 's/"Online User"/"在线用户"/g' `egrep "Online User" -rl ./`
 sed -i 's/"备份与升级"/"备份/升级"/g' `egrep "备份与升级" -rl ./`
 sed -i 's/"UPnP"/"即插即用"/g' `egrep "UPnP" -rl ./`
-
+sed -i 's/"监控"/"带宽监视"/g' `egrep "监控" -rl ./`
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
