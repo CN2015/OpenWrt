@@ -132,9 +132,9 @@ sed -i 's/"aMule设置"/"电驴下载"/g' `egrep "aMule设置" -rl ./`
 sed -i 's/"Turbo ACC 网络加速"/"网络加速"/g' `egrep "Turbo ACC 网络加速" -rl ./`
 sed -i 's/"实时流量监测"/"流量"/g' `egrep "实时流量监测" -rl ./`
 sed -i 's/"KMS 服务器"/"KMS激活"/g' `egrep "KMS 服务器" -rl ./`
-sed -i 's/"TTYD 终端"/"终端"/g' `egrep "TTYD 终端" -rl ./`
+sed -i 's/"TTYD 终端"/"TTYD终端"/g' `egrep "TTYD 终端" -rl ./`
 sed -i 's/"USB 打印服务器"/"打印服务"/g' `egrep "USB 打印服务器" -rl ./`
-sed -i 's/"Web 管理"/"Web管理"/g' `egrep "Web 管理" -rl ./`
+sed -i 's/"Web 管理"/"首页管理"/g' `egrep "Web 管理" -rl ./`
 sed -i 's/"管理权"/"改密码"/g' `egrep "管理权" -rl ./`
 sed -i 's/"带宽监控"/"监控"/g' `egrep "带宽监控" -rl ./`
 sed -i 's/"设置向导"/"向导"/g' `egrep "设置向导" -rl ./`
@@ -162,6 +162,7 @@ sed -i 's/"备份与升级"/"备份/升级"/g' `egrep "备份与升级" -rl ./`
 sed -i 's/"UPnP"/"即插即用"/g' `egrep "UPnP" -rl ./`
 sed -i 's/"监控"/"带宽监视"/g' `egrep "监控" -rl ./`
 sed -i 's/"Lucky大吉"/"全能工具"/g' `egrep "Lucky大吉" -rl ./`
+sed -i 's/"udpxy"/"电视组播"/g' `egrep "udpxy" -rl ./`
 
 cat > package/base-files/files/etc/banner << EOF
   _______                     ________        __
