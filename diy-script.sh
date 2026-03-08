@@ -122,5 +122,29 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 # sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/model/cbi/v2ray_server/*.lua
 # sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/view/v2ray_server/*.htm
 
+# ============================================================================
+# 🏷️自定义固件 Banner（SSH 登录欢迎信息）
+# ============================================================================
+echo ""
+echo "🏷️ 应用自定义 Banner..."
+
+cat > package/base-files/files/etc/banner << 'EOF'
+  _______                     ________        __
+ |       |.-----.-----.-----.|  |  |  |.----.|  |_
+ |   -   ||  _  |  -__|     ||  |  |  ||   _||   _|
+ |_______||   __|_____|__|__||________||__|  |____|
+          |__| W I R E L E S S   F R E E D O M
+ -----------------------------------------------------
+ %D %V, %C
+ -----------------------------------------------------
+ 
+ 🎯 TL-XDR6088 定制固件 | BY: CN2014  QQ:38663790
+ 🔗 管理地址: 192.168.1.1  |  用户: root  |  密码: 空
+ 💡 首次使用请修改默认密码
+ -----------------------------------------------------
+EOF
+
+echo "✅ 自定义 Banner 已应用"
+
 ./scripts/feeds update -a
 ./scripts/feeds install -a
